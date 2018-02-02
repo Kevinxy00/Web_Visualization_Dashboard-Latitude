@@ -1,0 +1,25 @@
+
+img.Github {
+    position:absolute;
+    top: 150%;
+    overflow: auto;
+}
+
+h1.intro{
+    position:absolute;
+    top: 10%;
+    text-align: center;
+}
+
+#intro {
+    position:absolute;
+    top: 20%;
+    text-align: center;
+}
+
+/* header (first row) under nav bar */
+#header {
+    position:absolute;
+    top: 20%;
+    text-align: center;
+}
