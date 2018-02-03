@@ -21,6 +21,11 @@ h1.intro{
 #header {
     position:absolute;
     top: 20%;
-    text-align: center;
+    text-align: right;
 }
 
+#bottom_visual {
+    position:absolute;
+    bottom: -150;
+    right: 15%;
+}
