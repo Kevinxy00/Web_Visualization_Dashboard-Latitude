@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
 <!-- Insert title here -->
-  <title>Max Temperature and Latitude Analysis</title>
+  <title>Comparisons</title>
 
   <!-- reset css -->
   <link rel="stylesheet" href="reset.css">
@@ -16,10 +16,132 @@
 </head>
 
 <body>
-  <img src="resources\depositphotos_5687868-stock-illustration-under-construction-women-at-work.jpg">
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- A black horizontal navbar that becomes vertical on small screens -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+    </button>
+    <ul class="navbar-nav">
+        <!-- Home button -->
+        <li class="nav-item active">
+            <a class="nav-link" href="index.html">  
+            Weather and Latitude</a>
+        </li>
+    </ul>
+
+    <!-- right side of navbar -->
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown ml-auto">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink" href="#" role="button" 
+            aria-haspopup="true" aria-expanded="false">Plot</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="MaxTemp_pg.html">Max Temperature</a>
+                <a class="dropdown-item" href="Humidity_pg.html">Humidity</a>
+                <a class="dropdown-item" href="Cloudiness_pg.html">Cloudiness</a>
+                <a class="dropdown-item" href="WindSpeed_pg.html">Wind Speed </a>
+            </div>
+        </li> 
+        <li class="nav-item">
+            <a class="nav-link" href="Comparisons_pg.html">Comparison
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Data_pg.html">Data</a>
+        </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div style="background-color:gray;">
+    <div class='row'>
+        <div class="col-md-12">
+            </br> <!-- line breaks for spacing between navbar and header -->
+            </br>
+        </div>
+    </div>
+  </div> <!-- ends background color -->
+
+    <!-- Header -->
+  <div class="container">
+    <div class='row align-items-center'>
+        <div class="col-md-4">
+            </br>
+            </br>
+        </div>
+        <div class="col-md-6">
+            <h1 class="intro">Weather Comparisons</h1>
+            </br>
+            </br>
+        </div>
+        <div class="col-md-2">
+            </br>
+            </br>
+        </div>
+    </div> 
+    <hr> <!-- horizontal line -->
+    
+    <!-- first row of graphs -->
+    <div class="row">
+        <div class="col-md-6">
+            </br>
+            <figure>
+                <figcaption> Max Temperature vs. Latitude</figcaption>
+                <a href="MaxTemp_pg.html">
+                    <img src="resources\City Max Temperature vs. Latitude.png"
+                        alt = "Max Temp vs. Latitude" height="375" width="500">
+                </a>
+                
+            </figure>
+        </div>
+        <div class="col-md-6">
+            </br>
+            <figure>
+                <figcaption> Humidity vs. Latitude</figcaption>
+                <a href="Humidity_pg.html">
+                    <img src="resources\City Humidity vs. Latitude.png"
+                      alt = "Humidity vs. Latitude" height="375" width="500">
+                </a>
+            </figure>
+        </div>
+    </div>
+
+    <!-- second row of graphs -->
+    <div class="row">
+        <div class="col-md-6">
+            <figure>
+                <figcaption> Cloudiness vs. Latitude</figcaption>
+                <a href="Cloudiness_pg.html">
+                    <img src="resources\City Cloudiness vs. Latitude.png"
+                        alt = "Cloudiness vs. Latitude" height="375" width="500">
+                </a> 
+            </figure>
+        </div>
+        <div class="col-md-6">
+            <figure>
+                <figcaption> Wind Speed vs. Latitude</figcaption>
+                <a href="WindSpeed_pg.html">
+                    <img src="resources\City Wind Speed vs. Latitude.png"
+                      alt = "Wind Speed vs. Latitude" height="375" width="500">
+                </a>
+            </figure>
+        </div>
+    </div>
+  </div> <!-- ends container for main body -->
 
 
 
+    <!-- reference to github and my github page -->
+    <p> 
+        This page is hosted on Github. <a target="_blank" 
+        href="https://github.com/Kevinxy00">See more projects here!</a>
+    </p> 
+    <hr>
 
 
 </body>
