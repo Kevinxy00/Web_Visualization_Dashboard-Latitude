@@ -26,8 +26,9 @@ h1.intro{
 
 p.description {
     position:absolute;
-    top: 10%;
+    top: 5%;
     text-align: left;
+    font-size: 18px;
     margin: 10%;
 }
 
