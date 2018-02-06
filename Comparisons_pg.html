@@ -22,11 +22,13 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   <!-- A black horizontal navbar that becomes vertical on small screens -->
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
-    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-    </button>
+  <nav class="navbar navbar-expand-sm navbar-dark">
+    <a class="nav-link" href="index.html">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+    </a> 
     <ul class="navbar-nav">
         <!-- Home button -->
         <li class="nav-item active">
@@ -86,12 +88,21 @@
     </div> 
     <hr> <!-- horizontal line -->
     
+    <div class="row">
+        <div class="col-md-6">
+            <p> Click any of the graphs below for a more in-depth analysis </p> 
+        </div>
+        <div class="col-md-6">
+            </br>
+        </div>
+    </div> 
+
     <!-- first row of graphs -->
     <div class="row">
         <div class="col-md-6">
             </br>
             <figure>
-                <figcaption> Max Temperature vs. Latitude</figcaption>
+                <figcaption class ="caption">Max Temperature vs. Latitude</figcaption>
                 <a href="MaxTemp_pg.html">
                     <img src="resources\City Max Temperature vs. Latitude.png"
                         alt = "Max Temp vs. Latitude" height="375" width="500">
@@ -102,7 +113,7 @@
         <div class="col-md-6">
             </br>
             <figure>
-                <figcaption> Humidity vs. Latitude</figcaption>
+                <figcaption class ="caption"> Humidity vs. Latitude</figcaption>
                 <a href="Humidity_pg.html">
                     <img src="resources\City Humidity vs. Latitude.png"
                       alt = "Humidity vs. Latitude" height="375" width="500">
@@ -115,7 +126,7 @@
     <div class="row">
         <div class="col-md-6">
             <figure>
-                <figcaption> Cloudiness vs. Latitude</figcaption>
+                <figcaption class ="caption"> Cloudiness vs. Latitude</figcaption>
                 <a href="Cloudiness_pg.html">
                     <img src="resources\City Cloudiness vs. Latitude.png"
                         alt = "Cloudiness vs. Latitude" height="375" width="500">
@@ -124,7 +135,7 @@
         </div>
         <div class="col-md-6">
             <figure>
-                <figcaption> Wind Speed vs. Latitude</figcaption>
+                <figcaption class ="caption"> Wind Speed vs. Latitude</figcaption>
                 <a href="WindSpeed_pg.html">
                     <img src="resources\City Wind Speed vs. Latitude.png"
                       alt = "Wind Speed vs. Latitude" height="375" width="500">
@@ -132,17 +143,24 @@
             </figure>
         </div>
     </div>
-  </div> <!-- ends container for main body -->
+ 
 
 
 
     <!-- reference to github and my github page -->
     <p> 
-        This page is hosted on Github. <a target="_blank" 
-        href="https://github.com/Kevinxy00">See more projects here!</a>
+        This page is hosted on Github. &emsp;
+        <a target="_blank" href="https://github.com/Kevinxy00/Web_Visualization_Dashboard-Latitude">
+            Web page repo link.
+        </a> &emsp;
+        <a target="_blank" href="https://github.com/Kevinxy00/Python-APIs-DataChallenge">
+            Project repo link.
+        </a> &emsp;
+        <a target="_blank" href="https://github.com/Kevinxy00">See more projects here!</a>
+        &emsp; Contact: kevinxy00@gmail.com
     </p> 
     <hr>
-
+</div> <!-- ends container for main body -->
 
 </body>
 </html>

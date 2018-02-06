@@ -1,9 +1,26 @@
 
-img.Github {
-    position:absolute;
-    top: 150%;
-    overflow: auto;
+/* Navbar section */
+.navbar-dark{
+    background:rgb(60, 60, 70);
+   
 }
+
+/* Here we define some styles that will ONLY be applied at screen sizes below 480 pixels */
+@media (max-width: 480px) {
+    .navbar-dark{
+        background: rgb(0, 0, 0);
+    }
+
+    .navbar-toggler{
+        background: rgb(92, 90, 90);
+    }
+    #bottom_visual_temp{
+        position:relative;
+        bottom: -2000px;
+        right: 15%;
+    }
+}
+/* End navbar section */
 
 h1.intro{
     position:absolute;
@@ -32,6 +49,14 @@ p.description {
     margin: 10%;
 }
 
+/* comparisons_pg figure captions */
+figcaption.caption {
+    text-align: center;
+    font-size: 24px;
+    color:teal;
+    font-weight: bold;
+}
+
 #CityData {
     position:absolute;
     top: 20%;
@@ -52,12 +77,11 @@ p.description {
     right: 15%;
 }
 
-#bottom_visual_page{
-    position:relative;
-    bottom: -250;
-    right: 0;
+#bottom_visual_temp{
+    position:absolute;
+    bottom: -150;
+    right: 15%;
 }
-
 
 #bottom_space_data_pg{
     position: relative;
@@ -65,3 +89,4 @@ p.description {
     bottom: 5px;
     background:rgb(255, 255, 255);
 }
+
