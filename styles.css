@@ -6,7 +6,7 @@
 }
 
 /* Here we define some styles that will ONLY be applied at screen sizes below certain pixels */
-@media (max-width: 900px) {
+@media (max-width: 1080px) {
     .navbar-dark{
         background: rgb(0, 0, 0);
     }
@@ -18,7 +18,7 @@
     #bottom_visual_page{
         position:relative;
         width: 100%;
-        top: 220px;
+        top:350px;
         left: 0;
     }
 
