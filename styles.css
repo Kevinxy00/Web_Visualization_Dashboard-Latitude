@@ -6,7 +6,7 @@
 }
 
 /* Here we define some styles that will ONLY be applied at screen sizes below certain pixels */
-@media (max-width: 1080px) {
+@media (max-width: 900px) {
     .navbar-dark{
         background: rgb(0, 0, 0);
     }
@@ -14,12 +14,24 @@
     .navbar-toggler{
         background: rgb(92, 90, 90);
     }
+
     #bottom_visual_page{
-        position:absolute;
-        bottom: -900px;
-        right: 15%;
+        position:relative;
+        width: 100%;
+        top: 220px;
+        left: 0;
+    }
+
+    /* comparisons_pg figure captions */
+    figcaption.caption {
+        right:1000px;
+        font-size: 24px;
+        color:teal;
+        font-weight: bold;
     }
 }
+
+
 /* End navbar section */
 
 h1.intro{
@@ -56,7 +68,12 @@ figcaption.caption {
     color:teal;
     font-weight: bold;
 }
+/* intro note in comparisons_pg */
+#comp_note{
+    left:10%;
+}
 
+/* in Data_pg??? May be unnecessary. */
 #CityData {
     position:absolute;
     top: 20%;
@@ -78,9 +95,9 @@ figcaption.caption {
 }
 
 #bottom_visual_page{
-    position:absolute;
-    bottom: -150;
-    right: 15%;
+    position:relative;
+    width: 100%;
+    bottom: 5px;
 }
 
 #bottom_space_data_pg{
